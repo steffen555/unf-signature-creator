@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <!-- CUSTOM FONT STYLES -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Oswald"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <p>Den virker (måske) kun i Chrome. Den virker i hvert fald overhovedet ikke i Safari. Udfyld felterne og se magien ske. Download billedet når du er færdig.</p>
+  <img src="img/unflogo.png" id="logo" hidden>
+  Navn: <input id="name" type="text" onchange="updateCanvas()" value="Svenn Enrique Bahnsen"><br>
+  Titel: <input id="title" type="text" onchange="updateCanvas()" value="Arrangør, UNF Odense"><br>
+  TBF: <input id="tbf" type="text" onchange="updateCanvas()" value="sbx"><br>
+  Telefonnummer: <input id="phone" type="text" onchange="updateCanvas()" value="12 34 56 78"><br>
+  <canvas id="mailSignature" width="1000ox" height="200 px" ></canvas><br>
+  <p>Udviklet af SSM.</p>
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
